@@ -1,0 +1,21 @@
+{
+  "name": "billboards-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha '/**/*.spec.js'",
+    "deploy": "docker build -t harebear/billboards . && heroku container:push web --app nameless-ocean-11605"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "profanity-util": "^0.2.0"
+  }
+}
